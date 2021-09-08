@@ -31,7 +31,7 @@ li {
 }
 header {
   text-align: center;
-  height: 100vh;
+  height: 300vh;
   background: url(media/header2.jpg.png) no-repeat fixed 50% 50%;
   background-size: cover;
 }
