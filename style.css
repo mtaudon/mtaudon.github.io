@@ -31,7 +31,7 @@ li {
 }
 header {
   text-align: center;
-  height: 300vh;
+  height: 100vh;
   background: url(media/header2.jpg.png) no-repeat fixed 50% 50%;
   background-size: cover;
 }
@@ -92,4 +92,60 @@ header .button:hover a {
   color: #e2dedb;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+}
+/***************************langages******************************/
+#langages {
+  padding: 80px 80px 80px 50px;
+  margin: 20px 0 0 6%;
+  height: 620px;
+  width: 47%;
+  max-width: 640px;
+  background: linear-gradient(20deg, #ffffff 10%, #7a7a7a 70%);
+  clip-path: polygon(1% 1%, 98% 2%, 96% 97%, 3% 98%);
+}
+#langages .bar {
+  padding: 10px 0 4px 0;
+  letter-spacing: 0.1em;
+}
+/********************FORMATION*************************/
+.formation {
+  position: relative;
+  top: -180px;
+  float: right;
+  margin-right: 5%;
+  padding: 110px 0 60px 50px;
+  width: 45%;
+  max-width: 660px;
+  background: linear-gradient(19deg, rgba(0, 180, 219, 0.69) 0%, #0083b0);
+  clip-path: polygon(5% 10%, 100% 6%, 92% 99%, 2% 95%);
+}
+#autodidacte {
+  padding-top: 20px;
+}
+#cisco {
+  padding: 50px 0 0 9%;
+}
+#formation h4 {
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  padding-bottom: 10px;
+  color: #005978;
+  text-shadow: -1px -1px -1px #35b4d5;
+}
+.counter {
+  display: flex;
+  text-align: center;
+}
+.data {
+  border: 1px solid #35b4d5;
+  width: 170px;
+  margin: 0 4%;
+  box-shadow: 0 0 8px #1c9dc4;
+  padding: 5px 20px;
+}
+.counter-value {
+  font-size: 2em;
+}
+.data-span {
+  font-size: 1.8em;
 }
