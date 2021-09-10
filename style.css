@@ -116,8 +116,9 @@ header .button:hover a {
   padding: 110px 0 60px 50px;
   width: 45%;
   max-width: 660px;
-  background: linear-gradient(19deg, rgba(0, 180, 219, 0.69) 0%, #0083b0);
-  clip-path: polygon(5% 10%, 100% 6%, 92% 99%, 2% 95%);
+  background: lightgray;
+  border: 2px solid black;
+  ;
 }
 #autodidacte {
   padding-top: 20px;
