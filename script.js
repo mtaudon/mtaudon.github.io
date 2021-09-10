@@ -17,9 +17,9 @@ window.addEventListener('scroll', function(){
 
 // TYPED
 var typed = new Typed('.typed', {
-    strings: ["Bonjour, je m'appelle Marius Taudon, et voici mon cv", "Après un baccalauréat professionnel Systèmes Numériques, option Réseaux Informatiques et Systèmes Communicants, j’ai décidé de poursuivre mon cursus scolaire dans le domaine du réseau et du développement, mon choix n’étant pas encore arrêté. En effet, chacun de ces deux domaines me plaît énormément, et j’aimerai y faire carrière. De ce fait, j’ai appris certains langages de programmation en autodidacte, tels que le langage HTML, CSS ou encore Javascript, et j’apprend également le c sharp, pendant mes cours scolaire, en effet, je suis actuellement étudiant en BTS Services Informatiques aux Organisations au sein de l’institut St Joseph du Havre. Enfin, j’ai de nombreuses expériences professionnelles, acquises en apprentissage. "],
+    strings: ["Bonjour, je m'appelle Marius Taudon, et voici mon CV.", "Après un baccalauréat professionnel Systèmes Numériques, option Réseaux Informatiques et Systèmes Communicants, j’ai décidé de poursuivre mon cursus scolaire dans le domaine du réseau et du développement, mon choix n’étant pas encore arrêté. En effet, chacun de ces deux domaines me plaît énormément, et j’aimerai y faire carrière. De ce fait, j’ai appris certains langages de programmation en autodidacte, tels que le langage HTML, CSS ou encore Javascript, et j’apprend également le c sharp, pendant mes cours scolaire, en effet, je suis actuellement étudiant en BTS Services Informatiques aux Organisations au sein de l’institut St Joseph du Havre. Enfin, j’ai de nombreuses expériences professionnelles, acquises en apprentissage. "],
     typeSpeed: 20,
-    
+    backSpeed: 20,
     
   });
 
@@ -33,21 +33,21 @@ var typed = new Typed('.typed', {
     window.innerHeight;
 
     if (compteur == 0 && $(window).scrollTop() > top) {
-      $('.counter-value').search(function() {
+      $('.counter-value').each(function() {
         let $this =  $(this),
           countTo = $this.attr('data-count');
         $({
-          countNum: this.text()
+          countNum: $this.text()
         }).animate({
           countNum : countTo 
         },
         {
-          duration: 10000,
+          duration: 5000,
           easing: 'swing',
           step: function() {
             $this.text(Math.floor(this.countNum));
           },
-          complete: function(){
+          complete: function() {
             $this.text(this.countNum);
           }
         });        
