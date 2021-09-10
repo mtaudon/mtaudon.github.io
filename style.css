@@ -100,8 +100,8 @@ header .button:hover a {
   height: 620px;
   width: 47%;
   max-width: 640px;
-  background: linear-gradient(20deg, #ffffff 10%, #7a7a7a 70%);
-  clip-path: polygon(1% 1%, 98% 2%, 96% 97%, 3% 98%);
+  border: 1px solid gray;
+  border-radius : 3px;
 }
 #langages .bar {
   padding: 10px 0 4px 0;
